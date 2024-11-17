@@ -72,12 +72,12 @@ alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code' # gui code editor
 
-# Directory navigation shortcuts
-alias ..='cd ..'
-alias ...='cd ../..'
-alias .3='cd ../../..'
-alias .4='cd ../../../..'
-alias .5='cd ../../../../..'
+# # Directory navigation shortcuts
+# alias ..='cd ..'
+# alias ...='cd ../..'
+# alias .3='cd ../../..'
+# alias .4='cd ../../../..'
+# alias .5='cd ../../../../..'
 
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
@@ -89,7 +89,38 @@ alias mkdir='mkdir -p'
 pokemon-colorscripts --no-title -r 1,3,6
 
 
-# akidoki pref
+# alias
 alias vi="vim"
 alias brave="com.brave.Browser"
-
+# from mac
+alias dev='cd ~/dev'
+alias conf='cd ~/.config'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias rm='rm -iv'
+alias cp='cp -iv'
+alias g='git'
+alias gst='git status'
+alias gs='git stash'
+alias ga='git add'
+alias gc='git commit -m'
+alias gac='git add --all && git commit -m'
+alias gps='git push'
+alias gpl='git pull'
+alias gd='git diff'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gb='git branch -vv'
+alias glg='git log --graph --color=always'
+alias gl='git log --oneline -n'
+alias dp='docker ps'
+alias dc='docker compose'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
+alias dcl='docker compose logs -f'
+alias dce='docker compose exec'
+alias dcb='docker compose build'
+alias nr='npm run'
+alias ll='ls -l'
+alias lal='ls -al'
