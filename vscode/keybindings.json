@@ -1,67 +1,87 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "shift+alt+backspace",
-        "command": "deleteLeft",
+        "key": "ctrl+up",
+        "command": "cursorTop",
         "when": "textInputFocus"
     },
     {
-        "key": "shift+backspace",
-        "command": "-deleteLeft",
+        "key": "ctrl+shift+up",
+        "command": "cursorTopSelect",
         "when": "textInputFocus"
     },
     {
-        "key": "shift+backspace",
-        "command": "deleteAllLeft"
+        "key": "ctrl+down",
+        "command": "cursorBottom",
+        "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+delete",
-        "command": "deleteFile",
-        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus && !treeFindOpen"
+        "key": "ctrl+shift+down",
+        "command": "cursorBottomSelect",
+        "when": "textInputFocus"
     },
     {
-        "key": "shift+delete",
-        "command": "-deleteFile",
-        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus && !treeFindOpen"
-    },
-    {
-        "key": "shift+delete",
-        "command": "deleteAllRight"
-    },
-    {
-        "key": "shift+alt+right",
-        "command": "cursorLineEndSelect"
-    },
-    {
-        "key": "shift+alt+left",
-        "command": "cursorLineStartSelect"
-    },
-    {
-        "key": "alt+right",
-        "command": "cursorLineEnd"
-    },
-    {
-        "key": "alt+left",
-        "command": "cursorLineStart"
-    },
-    {
-        "key": "alt+down",
-        "command": "editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+up",
+        "key": "ctrl+alt+up",
         "command": "editor.action.insertCursorAbove",
         "when": "editorTextFocus"
     },
     {
-        "key": "shift+alt+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "ctrl+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
     },
     {
-        "key": "shift+alt+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "alt+backspace",
+        "command": "deleteWordLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+delete",
+        "command": "deleteWordRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "deleteAllLeft"
+    },
+    {
+        "key": "ctrl+delete",
+        "command": "deleteAllRight"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "cursorWordEndRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "cursorWordLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "cursorLineStartSelect"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "cursorLineEndSelect"
     }
 ]
