@@ -1,1 +1,1 @@
-$HOME/Desktop/BeekeeperStudio/squashfs-root/AppRun &
+$HOME/.local/share/applications/BeekeeperStudio/AppRun &
